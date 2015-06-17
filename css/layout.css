@@ -75,5 +75,25 @@
 }
 .logo {
   width: 70%;
-  margin-left: 15%;
+  margin-left: 18%;
+}
+.header_nav li {
+  margin: 5%;
+  margin-top: 30%;
+}
+.news_content {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.news_content_link {
+  margin-top: 3%;
+}
+.news_author_name {
+  margin: 1%;
+}
+.news_author_pic {
+  margin-left: 10%;
+}
+.social_section li {
+  display:inline;
 }
