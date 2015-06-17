@@ -1,0 +1,9 @@
+.social li:hover {
+  color: #038491;
+}
+a {
+  color: #038491;
+}
+a:hover {
+  font-size: 16px;
+}
