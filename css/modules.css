@@ -4,18 +4,13 @@
   text-decoration: none;
   color: black;
 }
-  /*padding: 3%;
-  padding-bottom: 2%;
-  max-width: 250px;
-  text-align: center;
-  font-size: 16px;
-}*/
 .bottom_border {
   border-bottom: 1px solid #a6a6a6;
 }
-/**/
-
-/*-------------------Email Section-------------------*/
+a {
+  color: #038491;
+}
+/*-------------------Subscribe Section-------------------*/
 .subscribe_form {
   background-color: #efeded;
   text-align: center;
@@ -33,7 +28,6 @@
 }
 .social_section a {
   list-style: none;
-  /*font-size: 8em;*/
   color: #a6a6a6;
   text-decoration: none;
   text-align: center;
@@ -52,6 +46,7 @@
 .news_author_pic {
   border-radius: 200px;
   text-align: center;
+  width:50%;
 }
 .news_author_name {
   text-align: center;
@@ -67,7 +62,7 @@
   margin-top: 5%;
   border-top: 1px solid #a6a6a6;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.750em;
   color:#a6a6a6;
   padding:2%;
 }

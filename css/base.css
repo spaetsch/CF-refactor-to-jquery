@@ -219,9 +219,7 @@ input[type="email"]:focus {
 p,ul,ol,h1,h2,h3,a {
   font-family: 'noto_sansregular', sans-serif;
   }
-li {
-  font-size: 14px;
-}
+
 button {
   margin-bottom: 1rem;
   margin-top: 1rem;
