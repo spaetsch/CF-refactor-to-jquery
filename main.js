@@ -33,15 +33,18 @@ $("#subscribeField").keyup(function(){
 // submitButton.addEventListener('click', submitMessage, false);
 
 $("#submit").click(function(event){
-  console.log("invoked");
   event.preventDefault();
   $("#message").text('Thank you. We will now sell your email to spammers.');
 });
 
 
-function changeColor () {
-  form.classList.add("completed")
-}
-var form = document.getElementById('formsection')
-form.addEventListener('click', changeColor, false)
+// function changeColor () {
+//   form.classList.add("completed")
+// }
+// var form = document.getElementById('formsection')
+// form.addEventListener('click', changeColor, false)
 
+$("#formsection").click(function(){
+  console.log("invoked");
+  $("#formsection").addClass("completed");
+});
