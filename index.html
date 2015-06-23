@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="css/modules.css">
       <link rel="stylesheet" href="css/states.css">
       <link rel="stylesheet" href="css/themes.css">
-      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
   </head>
   <body class="container">
     <nav>
@@ -32,16 +32,16 @@
       </header>
       <main class="twelve columns">
         <section class="twelve columns crossfade_image">
-          <div class="fix">
-          <img class="main_img bottom"src="http://static1.squarespace.com/static/543094d8e4b0c2e1c2eb5d4f/5439d301e4b0dca077dd65c5/54bd8ad0e4b07b4a7d2394bd/1426437516096/Pear+Blossom+Agave.jpg?format=1000w">
-          <img class="main_img top"src="http://static1.squarespace.com/static/543094d8e4b0c2e1c2eb5d4f/5439d301e4b0dca077dd65c5/54b8a19ae4b0a3e130db1da8/1426437417498/13134+P+Page8+I21+by+roost.jpg?format=1000w">
-        </div>
+          <img class="main_img bottom"src="photos/BarronPic.jpg">
+          <img class="main_img top"src="photos/BarronPic2.jpg">
         </section>
-        <section class="twelve columns subscribe_form site_form section_formatting">
+        <section id="formsection" class="twelve columns subscribe_form  site_form section_formatting">
           <p class="subscribe_form_message">Subcribe here for offers and updates!</p>
           <form class= "twelve columns subscribe_form">
-          <input class="site_form_input" type="email" placeholder="email">
-          <button>Submit</button>
+          <input id="subscribeField"class="site_form_input" type="email" placeholder="email">
+          <button id="submit">Submit</button>
+          <div class="status" id="emailStatus"></div>
+          <p id="message"><p>
           </form>
         </section>
         <section class="twelve columns social_section section_formatting">
@@ -58,6 +58,7 @@
             <a class="news_content_link" href="">Read More</a>
           </p>
         </section>
+        <script src="main.js"></script>
       </main>
     <footer class="mainfooter twelve columns">
       <p>&copy Copyright The Barron Collection 2015</p>
