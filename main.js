@@ -1,17 +1,33 @@
-function verifyEmail() {
-  var status= document.getElementById('emailStatus');
+// function verifyEmail() {
+//   var status= document.getElementById('emailStatus');
 
-  var emailPattern=/^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+//   var emailPattern=/^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+//   if (emailPattern.test(subscribeField.value)) {
+//     status.classList.remove("notApproved");
+//     status.classList.add("approved");
+//   } else {
+//     status.classList.remove("approved");
+//     status.classList.add("notApproved");
+//   }
+// }
+
+// var elEmail = document.getElementById('subscribeField')
+// elEmail.addEventListener('keyup', verifyEmail, false);
+
+
+$("#subscribeField").keyup(function(){
+  var emailPattern = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+  console.log("invoked keyup");
+  console.log("emailPattern.test(subscribeField.value)", emailPattern.test(subscribeField.value));
+
   if (emailPattern.test(subscribeField.value)) {
-    status.classList.remove("notApproved");
-    status.classList.add("approved");
+    $("#emailStatus").removeClass("notApproved");
+    $("#emailStatus").addClass("approved");
   } else {
-    status.classList.remove("approved");
-    status.classList.add("notApproved");
+    $("#emailStatus").removeClass("approved");
+    $("#emailStatus").addClass("notApproved");
   }
-}
-var elEmail = document.getElementById('subscribeField')
-elEmail.addEventListener('keyup', verifyEmail, false);
+});
 
 function submitMessage (e) {
   e.preventDefault();
